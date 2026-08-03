@@ -22,9 +22,10 @@ export default async function handler(req, res) {
     // Menangkap data yang dikirim dari HTML Kakak
     const { buyer_sku_code, customer_no, ref_id } = req.body;
 
-    // Kredensial Digiflazz (Aman di dalam Server)
-    const username = "tuwumiWXAdqg";
-    const apiKey = "dev-b8bd5f40-d97c-11ef-8d09-333896381645"; 
+// Kredensial Digiflazz (Aman di dalam Server)
+const username = "jecedogOq0PD";
+const apiKey = "dev-ce95aa90-8ee0-11f1-85c2-5dfa23426c1"; 
+
 
     // Membuat MD5 Signature (Tanda Tangan Keamanan)
     const signString = username + apiKey + ref_id;
